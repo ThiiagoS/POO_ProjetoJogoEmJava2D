@@ -7,7 +7,7 @@ import meujogo.Modelo.Fase;
 public class Container  extends JFrame{
 	
 	public Container() {
-		add(new Fase());
+		add(new Fase()); // 
 		setTitle("Meu Jogo"); // Titulo do jogo
 		setSize(1024,728); // tamanho da janela do jogo 1024 de largura e 728 de altura
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// ao clicar no x o jogo fecha

@@ -94,6 +94,10 @@ public class Fase extends JPanel implements ActionListener {
 		}
 		repaint();
 	}
+	
+	public void checaColisoes() {
+		//Rectangle formaPlayer = player.getBounds();
+	}
 
 	private class TecaldoAdapter extends KeyAdapter {
 

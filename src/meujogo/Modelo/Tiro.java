@@ -1,6 +1,7 @@
 package meujogo.Modelo;
 
 import java.awt.Image;
+import java.awt.Rectangle;
 
 import javax.swing.ImageIcon;
 
@@ -34,6 +35,10 @@ public class Tiro {
 		if(this.x > LARGURA) {
 			isVisivel = false;
 		}
+	}
+	
+	public Rectangle getBounds() {
+		return new Rectangle(x,y,largura,altura);
 	}
 
 	public boolean isVisivel() {

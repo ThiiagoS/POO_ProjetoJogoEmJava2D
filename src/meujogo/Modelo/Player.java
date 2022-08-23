@@ -1,6 +1,7 @@
 package meujogo.Modelo;
 
 import java.awt.Image;
+import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +38,12 @@ public class Player {
 	public void tiroSimples() {
 		this.tiros.add(new Tiro(x+largura, y+(altura/2)));
 	}
+	
+	public Rectangle getBounds() {
+		return new Rectangle(x,y,largura,altura);
+	}
+
+	
 	public void keyPressed(KeyEvent tecla) {
 		int codigo = tecla.getKeyCode(); // ao pressionar uma tecla do teclado ele recebe na variavel codigo
 		
